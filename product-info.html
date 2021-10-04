@@ -23,24 +23,85 @@
       <a class="py-2 d-none d-md-inline-block" href="products.html">Productos</a>
       <a class="py-2 d-none d-md-inline-block" href="sell.html">Vender</a>
       <a class="py-2 d-none d-md-inline-block" href="cart.html">Mi carrito</a>
+
+      <div class="dropdown">
+        <button id = "usuario" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Usuario
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a  onclick="MyProfile()" class="dropdown-item" href="#">Mi Perfil</a>
+          <a id= "Cerrarsesion" onclick="CerrarSesion()" class="dropdown-item" href="#">Cerrar Sesión</a>
+         
+        </div>
+      </div>
     </div>
+    
   </nav>
   <div class="container p-5">
-    <div class="alert alert-danger" role="alert" style="position: relative; width:auto; top: 0;">
-      <h4 class="alert-heading">¡A trabajar! :)</h4>
-      <p>Esta sección corresponde a: Entrega 3 (Fecha de entrega: 19/09/2021) y Entrega 4 (Fecha de entrega: 03/10/2021).</p>
-      <hr>
-      <p class="mb-0">Para saber qué debes hacer, fijate en la actividad en CREA correspondiente a esta entrega.</p>
+
+    <div id ="informacionproducts">
+    
+    
     </div>
-  </div>
-  <footer class="text-muted">
-    <div class="container">
-      <p class="float-right">
-        <a href="#">Volver arriba</a>
-      </p>
-      <p>Este sitio forma parte de Desarrollo Web - JAP - 2020</p>
-      <p>Clickea <a target="_blank" href="Letra.pdf">aquí</a> para descargar la letra del obligatorio.</p>
+    <div id ="produtosrelacionados">
+    
+    
     </div>
+    
+    <div id ="coment">
+    
+      
+    
+    </div>
+    
+      <div id ="newcoment">
+    
+        </div>
+
+        <div class="container p-5">
+
+    
+          <form id = "formulario" action="">
+           
+          <label for="puntos">Ingresa tu comentario</label>
+          
+          <br>
+          <textarea name="" id="comentariodeusuarios" cols="80" rows="5" class="container p-3"></textarea>
+          <br> 
+          <div class="clasificacion">
+      
+           <!--  <input id="radio1" type="radio" name="estrellas" value="5">
+            <label for="radio1">★</label>
+            <input id="radio2" type="radio" name="estrellas" value="4">
+            <label for="radio2">★</label>
+            <input id="radio3" type="radio" name="estrellas" value="3">
+            <label for="radio3">★</label>
+            <input id="radio4" type="radio" name="estrellas" value="2">
+            <label for="radio4">★</label>
+            <input id="radio5" type="radio" name="estrellas" value="1"> -->
+      
+            <select class="form-control" id="puntos" >
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+      
+            <br>
+            
+          </div>
+          <button onclick= "guardarComentarios() " id ="nuevoscomentarios" type="button" class="btn btn-primary">Comentar</button>
+        </div>
+      
+        
+        </form>
+      
+         </div>
+            
+      
+        
+        
   </footer>
   <div id="spinner-wrapper">
     <div class="lds-ring">
